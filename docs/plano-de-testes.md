@@ -31,13 +31,13 @@ Definir a estratégia, o escopo e o cronograma dos testes manuais no site Sauce 
 
 ## 3. Requisitos/Histórias (Base de Teste)
 
-R1. Como usuário, quero fazer **login** para acessar o catálogo.
-R2. Como usuário, quero **visualizar e ordenar** produtos.
-R3. Como usuário, quero **adicionar e remover** produtos do carrinho.
-R4. Como usuário, quero **finalizar a compra** informando meus dados e recebendo confirmação.
-R5. Como usuário, quero **ver mensagens claras de erro** quando eu preencher dados inválidos ou deixar campos obrigatórios em branco.
+* R1. Como usuário, quero fazer **login** para acessar o catálogo.
+* R2. Como usuário, quero **visualizar e ordenar** produtos.
+* R3. Como usuário, quero **adicionar e remover** produtos do carrinho.
+* R4. Como usuário, quero **finalizar a compra** informando meus dados e recebendo confirmação.
+* R5. Como usuário, quero **ver mensagens claras de erro** quando eu preencher dados inválidos ou deixar campos obrigatórios em branco.
 
-> Observação: O Sauce Demo oferece contas de teste com comportamentos específicos (ver seção 7 – Dados de Teste).
+> Observação: O Sauce Demo oferece contas de teste com comportamentos específicos (em seção 7 – Dados de Teste).
 
 ## 4. Abordagem de Teste
 
@@ -95,7 +95,7 @@ Dados de Checkout (exemplos):
 | ID   | Título                         | Pré-condição                | Passos Resumidos                                         | Resultado Esperado                                         |
 | ---- | ------------------------------ | --------------------------- | -------------------------------------------------------- | ---------------------------------------------------------- |
 | TC01 | Login com credenciais válidas  | Site acessível              | Informar `standard_user` / `secret_sauce` e logar        | Redireciona ao catálogo; menu e ícone do carrinho visíveis |
-| TC02 | Login com senha inválida       | –                           | Usuário válido + senha inválida                          | Mensagem clara de erro; permanece na tela de login         |
+| TC02 | Login com senha inválida       | –                           | Informar Usuário válido + senha inválida                 | Mensagem clara de erro; permanece na tela de login         |
 | TC03 | Adicionar produto ao carrinho  | Autenticado                 | Clicar em "Add to cart" em um item                       | Contador do carrinho incrementa; item aparece no carrinho  |
 | TC04 | Remover produto do carrinho    | Item previamente adicionado | Clicar em "Remove"                                       | Item removido; contador decrementa                         |
 | TC05 | Ordenar produtos por preço     | Autenticado                 | Selecionar ordenação "Price (low to high)"               | Lista reordena corretamente (validação por amostragem)     |
